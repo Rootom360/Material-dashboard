@@ -1,0 +1,12 @@
+<app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header> <!--here i set togglesidebarforme function for getting output data from header component-->
+
+<mat-drawer-container>
+    <mat-drawer mode='side' [opened]='sideBarOpen'> <!--here i set opened type of variable and pass it the sidebaropen variable, then i go to header.ts file-->
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer></app-footer>
