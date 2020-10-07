@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { PeriodicElement } from './dashboard/dashboard.component';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,9 @@ export class DashboardService {
 
   bigChart(){
     return [{
+        name: 'India',
+          data: [502, 635, 809, 947, 1402, 3634, 5268]
+      },{
       name: 'Asia',
           data: [502, 635, 809, 947, 1402, 3634, 5268]
       }, {
@@ -32,7 +36,7 @@ export class DashboardService {
 
   pieChart() {
     return [{
-      name: 'Chrome',
+      name: 'somesh',
       y: 61.41,
       sliced: true,
       selected: true

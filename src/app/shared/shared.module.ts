@@ -15,6 +15,8 @@ import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
+import { PostsComponent } from '../modules/posts/posts.component';
+import { PostslistComponent } from '../postslist/postslist.component';
 
 
 
@@ -25,7 +27,9 @@ import { PieComponent } from './widgets/pie/pie.component';
     FooterComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    // PostsComponent,
+    // PostslistComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +41,9 @@ import { PieComponent } from './widgets/pie/pie.component';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    // PostsComponent,
+    // PostslistComponent
   ],
   exports: [
     HeaderComponent,
@@ -45,7 +51,9 @@ import { PieComponent } from './widgets/pie/pie.component';
     FooterComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    // PostsComponent,
+    // PostslistComponent
   ]
 })
 export class SharedModule { }

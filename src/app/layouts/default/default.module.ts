@@ -15,6 +15,11 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PostslistComponent } from 'src/app/postslist/postslist.component';
 
 
 
@@ -23,7 +28,8 @@ import { MatInputModule } from '@angular/material/input';
   declarations: [
     DefaultComponent,
     DashboardComponent,
-    PostsComponent
+    PostsComponent,
+    PostslistComponent
   ],
   imports: [
     CommonModule,
@@ -38,10 +44,19 @@ import { MatInputModule } from '@angular/material/input';
     MatSortModule,
     MatCheckboxModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule,
+    MatToolbarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatCardModule,
   ],
   providers: [
-    DashboardComponent
-  ]
+    DashboardComponent,
+    PostsComponent,
+    PostslistComponent
+  ],
+  entryComponents: [PostsComponent]
 })
 export class DefaultModule { }

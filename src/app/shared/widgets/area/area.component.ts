@@ -40,8 +40,11 @@ export class AreaComponent implements OnInit {
         enabled: true,
       },
       series: [{
+        name: 'india',
+          data: [456, 63, 804, 947, 1402, 3634, 5268]
+      },{
           name: 'Asia',
-          data: [502, 635, 809, 947, 1402, 3634, 5268]
+          data: [24, 24, 24, 64, 134, 304, 465]
       }, {
           name: 'Africa',
           data: [106, 107, 111, 133, 221, 767, 1766]

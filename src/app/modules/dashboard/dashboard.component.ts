@@ -64,14 +64,14 @@ export class DashboardComponent implements OnInit {
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit() {
-    this.bigChart = this.dashboardService.bigChart();   
+    this.bigChart = this.dashboardService.bigChart();
     this.cards = this.dashboardService.cards();
     this.pieChart = this.dashboardService.pieChart();
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;   //this table use in pagination
-    this.dataSource.sort = this.sort;             //this data is  use for sorting
+    this.dataSource.sort = this.sort;        //this data is  use for sorting
   }
 
   public doFilter = (value: string) => {                         //this funtion does filter in data table   
